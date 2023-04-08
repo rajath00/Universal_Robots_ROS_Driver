@@ -292,6 +292,7 @@ if __name__ == "__main__":
     trajectory_type = client.choose_controller()
     if trajectory_type == "joint_based":
         client.send_joint_trajectory()
+        print("sending trajectory function")
     elif trajectory_type == "cartesian":
         client.send_cartesian_trajectory()
     else:
